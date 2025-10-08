@@ -1,6 +1,7 @@
 # GMail Clone
 
-A project to clone the vintage style UI of Gmail app using Flutter
+A project to clone the vintage style UI of Gmail app using Flutter,
+This is not a final build.
 
 # Screenshots
 

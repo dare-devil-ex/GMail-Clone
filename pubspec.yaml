@@ -1,5 +1,5 @@
 name: gmail_clone
-description: "Project to clone the UI of Gmail app using Flutter"
+description: "A project to clone the UI of Gmail app using Flutter"
 publish_to: 'none'
 
 version: 1.0.0+1

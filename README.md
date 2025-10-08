@@ -1,16 +1,21 @@
-# gmail_cone
+# GMail Clone
 
-A new Flutter project.
+A project to clone the vintage style UI of Gmail app using Flutter
 
-## Getting Started
+# Screenshots
 
-This project is a starting point for a Flutter application.
+![GClone](https://github.com/user-attachments/assets/10566ed4-0d8b-4bd9-9c2a-512886372b58)
 
-A few resources to get you started if this is your first Flutter project:
+# Releases
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Click [here to download]()
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Steps to Bluid by your own
+
+> clone the repository
+> fluter pub get
+> flutter build apk
+
+# Author
+
+- @dare-devil-ex

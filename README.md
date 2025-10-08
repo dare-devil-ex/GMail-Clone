@@ -13,7 +13,9 @@ Click [here to download]()
 # Steps to Bluid by your own
 
 > clone the repository
+
 > fluter pub get
+
 > flutter build apk
 
 # Author

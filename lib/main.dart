@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Gmail Clone',
+      title: 'GMail Clone',
       theme: ThemeData(
         useMaterial3: true,
         appBarTheme: AppBarTheme(backgroundColor: Colors.grey[800]),

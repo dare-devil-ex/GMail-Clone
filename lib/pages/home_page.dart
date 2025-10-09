@@ -399,6 +399,36 @@ class _HomepageState extends State<Homepage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const SoonPage()),
+          );
+        },
+        tooltip: 'Compose',
+        backgroundColor: Colors.red,
+        child: Icon(Icons.edit, color: Colors.white),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.grey[800],
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              icon: Icon(Icons.mail, color: Colors.white),
+              onPressed: () {},
+              tooltip: 'Mail',
+            ),
+            IconButton(
+              icon: Icon(Icons.videocam, color: Colors.white),
+              onPressed: () {},
+              tooltip: 'Meet',
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

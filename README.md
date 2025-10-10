@@ -9,7 +9,7 @@ This is not a final build.
 
 # Releases
 
-Click [here to download](https://github.com/dare-devil-ex/GMail-Clone/releases/tag/GClone-v1.0.0)
+Click [here to download](https://github.com/dare-devil-ex/GMail-Clone/releases/)
 
 # Steps to Bluid by your own
 

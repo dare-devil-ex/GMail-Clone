@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gmail_clone/until/user_title.dart';
 
 class UserAccount extends StatefulWidget {
   const UserAccount({super.key});
@@ -28,7 +29,41 @@ class _UserAccountState extends State<UserAccount> {
               ),
             ),
             SizedBox(height: 20),
-            Text('wkaie', style: TextStyle(color: Colors.white, fontSize: 35)),
+            Text(
+              'wkaie@gmail.com',
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
+            SizedBox(height: 15),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              alignment: Alignment.center,
+              width: MediaQuery.of(context).size.height / 1.6,
+
+              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+              child: Column(
+                children: [
+                  UserTitle(
+                    icon: Icon(Icons.account_circle),
+                    title: 'Manage your Google Account',
+                    index: 0,
+                  ),
+                  UserTitle(
+                    icon: Icon(Icons.add),
+                    title: 'Add another account',
+                    index: 1,
+                  ),
+                  Divider(color: Colors.grey[500]),
+                  UserTitle(
+                    icon: Icon(Icons.logout),
+                    title: 'Sign out',
+                    index: 2,
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

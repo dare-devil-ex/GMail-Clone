@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gmail_clone/pages/email_page.dart';
+import 'package:gmail_clone/pages/vidcam.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:gmail_clone/pages/soon_page.dart';
 import 'package:gmail_clone/pages/user_account.dart';
@@ -12,6 +14,16 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+  int isSelected = 0;
+  PageController pageController = PageController();
+
+  void _selectedIndex(int index) {
+    setState(() {
+      isSelected = index;
+    });
+    pageController.jumpToPage(index);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -389,15 +401,10 @@ class _HomepageState extends State<Homepage> {
           ],
         ),
       ),
-      body: Center(
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(Icons.email, color: Colors.grey, size: 100),
-            Text('No emails yet'),
-          ],
-        ),
+      body: PageView(
+        controller: pageController,
+        onPageChanged: _selectedIndex,
+        children: [EmailPage(), Vidcam()],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -410,24 +417,24 @@ class _HomepageState extends State<Homepage> {
         backgroundColor: Colors.red,
         child: Icon(Icons.edit, color: Colors.white),
       ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.grey[800],
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-              icon: Icon(Icons.mail, color: Colors.white),
-              onPressed: () {},
-              tooltip: 'Mail',
-            ),
-            IconButton(
-              icon: Icon(Icons.videocam, color: Colors.white),
-              onPressed: () {},
-              tooltip: 'Meet',
-            ),
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.red[400],
+        unselectedItemColor: Colors.white,
+        backgroundColor: Colors.grey[800],
+        items: [
+          BottomNavigationBarItem(
+            activeIcon: Icon(Icons.mail, color: Colors.red[900]),
+            icon: Icon(Icons.mail, color: Colors.white),
+            label: 'Mail',
+          ),
+          BottomNavigationBarItem(
+            activeIcon: Icon(Icons.videocam, color: Colors.red[900]),
+            icon: Icon(Icons.videocam, color: Colors.white),
+            label: 'Meet',
+          ),
+        ],
+        onTap: _selectedIndex,
+        currentIndex: isSelected,
       ),
     );
   }

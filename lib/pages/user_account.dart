@@ -35,13 +35,12 @@ class _UserAccountState extends State<UserAccount> {
             ),
             SizedBox(height: 15),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 color: Colors.grey[700],
                 borderRadius: BorderRadius.circular(10),
               ),
               alignment: Alignment.center,
-              width: MediaQuery.of(context).size.height / 1.6,
-
               padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
               child: Column(
                 children: [

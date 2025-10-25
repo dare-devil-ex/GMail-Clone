@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gmail_clone/pages/email_page.dart';
 import 'package:gmail_clone/pages/vidcam.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:gmail_clone/pages/user_account.dart';
 import 'package:gmail_clone/until/drawer_title.dart';
 
 class Homepage extends StatefulWidget {
@@ -38,10 +37,7 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const UserAccount()),
-              );
+              Navigator.pushNamed(context, "/userAccount");
             },
             tooltip: 'User Account',
           ),
@@ -59,10 +55,7 @@ class _HomepageState extends State<Homepage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      'assets/icon/ic_launcher_adaptive_fore.png',
-                      height: 50,
-                    ),
+                    Image.asset('assets/icon/icon.png', height: 50),
                     Text(
                       'GMail Clone',
                       style: TextStyle(color: Colors.white, fontSize: 24),

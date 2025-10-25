@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gmail_clone/pages/email_page.dart';
 import 'package:gmail_clone/pages/home_page.dart';
 import 'package:gmail_clone/pages/soon_page.dart';
-import 'package:gmail_clone/pages/vidcam.dart';
+import 'package:gmail_clone/pages/user_account.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +26,10 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(color: Colors.white70),
         ),
       ),
-      routes: {"/soonpage": (context) => SoonPage()},
+      routes: {
+        "/soonpage": (context) => SoonPage(),
+        "/userAccount": (context) => UserAccount(),
+      },
       debugShowCheckedModeBanner: false,
       home: const Homepage(),
     );

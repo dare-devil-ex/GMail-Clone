@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gmail_clone/pages/email_page.dart';
 import 'package:gmail_clone/pages/home_page.dart';
+import 'package:gmail_clone/pages/soon_page.dart';
+import 'package:gmail_clone/pages/vidcam.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +27,7 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(color: Colors.white70),
         ),
       ),
+      routes: {"/soonpage": (context) => SoonPage()},
       debugShowCheckedModeBanner: false,
       home: const Homepage(),
     );

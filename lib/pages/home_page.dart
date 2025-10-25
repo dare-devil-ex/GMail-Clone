@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gmail_clone/pages/email_page.dart';
 import 'package:gmail_clone/pages/vidcam.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:gmail_clone/pages/soon_page.dart';
 import 'package:gmail_clone/pages/user_account.dart';
 import 'package:gmail_clone/until/drawer_title.dart';
 
@@ -74,10 +73,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.all_inbox),
@@ -89,10 +85,7 @@ class _HomepageState extends State<Homepage> {
             Divider(),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.inbox),
@@ -103,10 +96,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.label),
@@ -117,10 +107,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.group_outlined),
@@ -131,10 +118,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.info_outline),
@@ -153,10 +137,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.star),
@@ -167,10 +148,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.snooze),
@@ -181,10 +159,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.label_important),
@@ -195,10 +170,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.label_important),
@@ -209,10 +181,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.shopping_basket),
@@ -223,10 +192,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.send),
@@ -237,10 +203,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.schedule),
@@ -251,10 +214,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.outbox),
@@ -265,10 +225,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.drafts),
@@ -279,10 +236,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.all_inbox),
@@ -293,10 +247,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.report),
@@ -307,10 +258,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.delete),
@@ -321,10 +269,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.manage_accounts),
@@ -343,10 +288,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.calendar_today),
@@ -357,10 +299,7 @@ class _HomepageState extends State<Homepage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.contacts),
@@ -372,10 +311,7 @@ class _HomepageState extends State<Homepage> {
             Divider(),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SoonPage()),
-                );
+                Navigator.pushNamed(context, "/soonpage");
               },
               child: DrawerTitle(
                 icon: Icon(Icons.settings),
@@ -408,10 +344,7 @@ class _HomepageState extends State<Homepage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const SoonPage()),
-          );
+          Navigator.pushNamed(context, "/soonpage");
         },
         tooltip: 'Compose',
         backgroundColor: Colors.red,

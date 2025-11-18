@@ -14,12 +14,8 @@ Click [here to download](https://github.com/dare-devil-ex/GMail-Clone/releases/)
 
 # Steps to Bluid by your own
 
-> clone the repository
+- clone the repository
 
-> fluter pub get
+- fluter pub get
 
-> flutter build apk
-
-# Author
-
-- @dare-devil-ex
+- flutter build apk
